@@ -17,10 +17,11 @@ func main() {
 	fmt.Println("Ми маємо ", myMoney, "грн.")
 
 	fmt.Println(" Скільки грошей треба витратити, щоб купити 9 яблук та 8 груш?")
-	nineApple := 9 * oneApplePrice
-	sevenPear := 9 * onePearPrice
-	fmt.Println("Щоб купити 9 яблук потрібно: ", nineApple, "грн")
-	fmt.Println("Щоб купити 7 груш потрібно: ", sevenPear, "грн")
+	const appleCount = 9
+	const pearCount = 7
+
+	fmt.Println("Щоб купити 9 яблук потрібно: ", appleCount*oneApplePrice, "грн")
+	fmt.Println("Щоб купити 7 груш потрібно: ", pearCount*onePearPrice, "грн")
 
 	fmt.Println(" Скільки груш ми можемо купити?")
 	totalBuyPears := myMoney / onePearPrice
